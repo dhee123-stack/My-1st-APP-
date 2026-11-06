@@ -1,0 +1,19 @@
+
+body {
+    font-family: Lucida Handwriting;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
