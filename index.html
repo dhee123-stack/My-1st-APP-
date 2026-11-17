@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My 1st APP!</title>
-</head>
-<body><link rel="stylesheet" href="style.css">
+    <title>My AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Welcome to My Website</h1>
-    <p>I built this website using Visual Studio Code!</p>
-    <button id="alertBtn">Click Me</button>
+    <!-- 1. SIGN-IN SCREEN -->
+    <div id="login-screen" class="card">
+        <h2>Welcome to My AI</h2>
+        <p>Sign in to start chatting</p>
+        <input type="email" id="email-input" placeholder="Enter your email" required>
+        <input type="password" id="password-input" placeholder="Enter password" required>
+        <button id="login-btn">Sign In</button>
+    </div>
 
-    <!-- Link your JavaScript file below -->
+    <!-- 2. MAIN AI CHAT INTERFACE (Hidden at first) -->
+    <div id="chat-screen" class="chat-container hidden">
+        <header>
+            <h3>My AI Assistant</h3>
+            <button id="logout-btn">Sign Out</button>
+        </header>
+        
+        <div id="chat-box" class="chat-box">
+            <div class="message ai">Hello! Ask me anything.</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-prompt" placeholder="Message AI...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
     <script src="app.js"></script>
-</body>
-</html>
-    
 </body>
 </html>
